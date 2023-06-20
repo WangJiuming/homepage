@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: "Sans Serif", sans-serif;
+    line-height: 1.42857143;
+}
+
+p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee
+}
+
+.hr-bold-crimson {
+    border-top: 2px solid rgb(153, 39, 49);
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500
+}
+
+.nav-bar {
+    background-color: rgb(153, 39, 49);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  /* this will make the items wrap onto multiple lines */
+    flex-basis: 50%;
+    box-sizing: border-box;
+    min-height: 54px;  /* this will make the bar wrap onto multiple lines */
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ref {
+    background-color: rgb(153, 39, 49);
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-size-adjust: 100%;
+    padding: 14px 20px;
+}
+
+.nav-ref:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+    text-decoration: underline black;
+    border-radius: 1px;
+}
+
+/* center the section after jumping as desired */
+#about {
+    scroll-margin-top: 20vh; /* 50vh for center */
+}
+#publications {
+    scroll-margin-top: 20vh;
+}
+#teaching {
+    scroll-margin-top: 20vh;
+}
+#awards {
+    scroll-margin-top: 20vh;
+}
+
+/* main text body container */
+.container {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 750px;
+    margin: 50px auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+/* for the introduction part */
+.info-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-left {
+    flex: 1;
+    /*background-color: lightblue;*/
+    margin-right: 30px;
+    /*margin-left: 10px;*/
+}
+
+.info-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-right {
+    flex: 2;
+    /*background-color: lightgreen;*/
+}
+
+/* media query for smaller screens */
+@media (max-width: 768px) {
+    .info-left, .info-right {
+        flex: 0 0 100%;
+    }
+
+    .info-left img {
+        max-width: 400px;
+    }
+}
+
+/* for the pronunciation part */
+.expandable-container {
+    margin-top: -15px;
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+    overflow: hidden;
+}
+
+.expandable-header {
+    padding: 5px 10px 20px 0;
+    /*cursor: pointer;*/
+}
+
+.expandable-content {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: none; /* hide content by default */
+}
+
+/* add a transition for smooth expansion */
+.content {
+    transition: max-height 0.1s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.expandable-content.show {
+    display: block;
+    max-height: 1000px; /* increase this value for a longer content */
+}
+
+
+/* bottom bar */
+.bottom-bar {
+    background-color: rgb(153, 39, 49);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex; /* use flexbox */
+    justify-content: center; /* center the items */
+    font-size: 14px;
+}
+
+.bottom-bar table {
+    color: white;
+}
+
+.bottom-bar span {
+    margin-left: 5px;
+}
+
+/* style the definition list */
+dl.definition-list {
+    display: block;
+    margin: 0 0 20px 0;
+    color: black;
+}
+
+dl.definition-list dt {
+    float: left;
+    /*height: 40px;*/
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+dl.definition-list dd {
+    float: none;
+    font-size: 18px;
+    /*height: 40px;*/
+    margin-left: 150px;
+
+    padding: 5px 0;
+}
+
+/* style a second definition list */
+dl.grading-detail {
+    display: block;
+    margin: 0;
+    color: black;
+}
+
+dl.grading-detail dt {
+    float: left;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+dl.grading-detail dd {
+    float: none;
+    font-size: 18px;
+    margin-left: 75px;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e3e5;
+}
+
+/* style the table */
+.schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.schedule-table th, .schedule-table td {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 8px;
+    text-align: left;
+}
+.schedule-table th {
+    background-color: #f2f2f2;
+}
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.schedule-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.styled-label {
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    padding: 0 12px;
+    border-radius: 4px;
+}

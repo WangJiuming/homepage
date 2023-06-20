@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jiuming's Homepage</title>
+</head>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById("content");
+        content.classList.toggle("show");
+    }
+</script>
+
+<body>
+    <!-- navigation bar -->
+    <div class="nav-bar">
+        <a class="nav-ref" href="#about">About</a>
+        <a class="nav-ref" href="#publications">Publications</a>
+        <a class="nav-ref" href="#teaching">Teaching</a>
+        <a class="nav-ref" href="#awards">Awards</a>
+    </div>
+
+    <!-- main body of the page -->
+    <div class="container">
+        <!-- basic information -->
+        <div class="info-box">
+            <div class="info-left">
+                <br>
+                <img id="portrait" src="images/portrait.jpg" alt="portrait">
+            </div>
+
+            <div class="info-right">
+                <h1 style="font-size: 24px; font-weight: 500">
+                    Wang Jiuming
+                    <span style="font-family:STFangsong, sans-serif">
+                        (王久铭)
+                    </span>
+                </h1>
+
+                <div class="expandable-container">
+                    <div class="expandable-header" onclick="toggleContent()">
+                        <a style="font-style: italic; font-size: 18px">pronunciation</a>
+                    </div>
+                    <div class="expandable-content" id="content">
+                        <p style="font-size: 16px">
+                            My given name is Jiuming, where J sounds the same as in "Beijing" or "Mt. Fuji".
+                            I'm open to any approximation,
+                            so please feel free to use your most comfortable pronunciations!
+                        </p>
+                    </div>
+                </div>
+
+                <p style="font-size: 16px">
+                    Department of Computer Science and Engineering<br>
+                    The Chinese University of Hong Kong (CUHK)<br>
+                    <b>Office</b>: TBA <br>
+                    <b>Email</b>: jmwang9@cse.cuhk.edu.hk
+                </p>
+                <a style="font-size: 16px" href="" target="_blank">CV</a> |
+                <a style="font-size: 16px" href="" target="_blank">Google Scholar</a> |
+                <a style="font-size: 16px" href="" target="_blank">ORCID</a> |
+                <a style="font-size: 16px" href="https://www.linkedin.com/in/jiuming-wang-494b47271/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3 id="about" >About</h3>
+        <p>
+            I am currently a PhD student at the Department of Computer Science and Engineering (CSE),
+            The Chinese University of Hong Kong (CUHK), supervised by <a href="https://liyu95.com/" target="_blank">Prof. Li Yu</a>.
+            My PhD research is supported by the
+            <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank">Hong Kong PhD Fellowship Scheme (HKPFS)</a>.
+            Before that, I obtained my Bachelor degree in Engineering (first-honor) also at CUHK,
+            with a major in Artificial Intelligence.
+            <br>
+            <br>
+            My research interest mainly lies in the interdisciplinary field between AI and healthcare.
+            I am currently working on RNA-related projects that will benefit downstream research in computational biology, meta-genomics
+            and de novo drug discovery.
+        </p>
+
+        <hr>
+
+        <h3 id="publications">Publications</h3>
+        <span style="font-size: 16px">* equal contribution, &dagger; correspondence</span>
+        <ul>
+            <li>AcrNET: Predicting Anti-CRISPR with Deep Learning,
+                Y. Li*, Y. Wei*, S. Xu, Q. Tan, L. Zong, <b>J. Wang</b>, Y. Wang, J. Chen, L. Hong, Y. Li<sup>&dagger;</sup>,
+                <i>Bioinformatics</i> (IF=6.94), 2023,
+                [<a href="https://doi.org/10.1093/bioinformatics/btad259" target="_blank">paper</a>]
+                [<a href="https://github.com/banma12956/AcrNET" target="_blank">code</a>]
+                [<a href="https://proj.cse.cuhk.edu.hk/aihlab/AcrNET/#/home" target="_blank">server</a>]
+            </li>
+            <li>Deep autoencoder for interpretable tissue-adaptive deconvolution and cell-type-specific gene analysis,
+                Y. Chen*, Y. Wang*, Y. Chen, Y. Cheng, Y. Wei, Y. Li, <b>J. Wang</b>, Y. Wei, T. Chan<sup>&dagger;</sup>, Y. Li<sup>&dagger;</sup>,
+                <i>Nature Communications</i> (IF=17.69), 2022,
+                [<a href="https://www.nature.com/articles/s41467-022-34550-9" target="_blank">paper</a>]
+                [<a href="https://github.com/poseidonchan/TAPE" target="_blank">code</a>]
+            </li>
+        </ul>
+
+        <hr>
+        <h3 id="teaching">Teaching</h3>
+        <ul>
+            <li>2023 Summer,
+                <a href="https://www.erg.cuhk.edu.hk/erg/SummerResearchInternship" target="_blank">
+                    UG Summer Research Internship
+                </a>- Teaching Assistant
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3 id="awards">Awards (selected)</h3>
+        <ul>
+            <li>Hong Kong PhD Fellowship<span style="color: grey">, Research Grants Council, Hong Kong Government</span></li>
+            <li>CUHK Vice-Chancellor Scholarship<span style="color: grey">, CUHK</span></li>
+            <li><a href="https://en.wikipedia.org/wiki/Andrew_Yao" target="_blank" style="color: black">Yao</a> Fellowship
+                <span style="color: grey">, CSE, CUHK</span></li>
+            <li>Hong Kong SAR Government Scholarship<span style="color: grey">, Education Bureau, Hong Kong Government</span></li>
+            <li><a href="https://en.wikipedia.org/wiki/Charles_K._Kao" target="_blank" style="color: black">Professor Charles K Kao</a>
+                Research Exchange Scholarship<span style="color: grey">, Engineering Faculty, CUHK</span></li>
+            <li>Gold Award for Academic Excellence<span style="color: grey">, CSE, CUHK</span></li>
+            <li>Master's List Award<span style="color: grey">, S H Ho College, CUHK</span></li>
+            <li>ELITE Scholarship<span style="color: grey">, Engineering Faculty, CUHK</span></li>
+        </ul>
+    </div>
+
+    <div class="bottom-bar">
+        <table>
+            <tbody>
+            <tr>
+                <td style="width: 100px; height: 50px">
+                    <span>Email</span>
+                </td>
+                <td style="width: 150px; height: 50px">
+                    <span>
+                        jmwang9@cse.cuhk.edu.hk
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 100px">
+                    <span>Mail Address</span>
+                </td>
+                <td style="width: 300px">
+                    <span>
+                        TBA
+                    </span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    <span style="color: white">
+                        &copy; 2023 Wang Jiuming <br>
+                        Last updated: June 2023
+                    </span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <span style="color: white;">
+            <br><br><br>
+        </span>
+
+    </div>
+
+</body>
+</html>
