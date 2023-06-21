@@ -9,6 +9,8 @@ p {
     line-height: 26px;
     margin-top: 0;
     margin-bottom: 10px;
+    text-size-adjust: auto;
+    -webkit-text-size-adjust: auto;
 }
 
 a {
@@ -74,7 +76,8 @@ h3 {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    text-size-adjust: 100%;
+    text-size-adjust: auto;
+    -webkit-text-size-adjust: auto;
     padding: 14px 20px;
 }
 
@@ -107,7 +110,8 @@ h3 {
     max-width: 750px;
     margin: 50px auto;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
+    text-size-adjust: auto;
 }
 
 /* for the introduction part */
@@ -117,6 +121,8 @@ h3 {
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    text-size-adjust: auto;
+    -webkit-text-size-adjust: auto;
 }
 
 .info-left {
