@@ -192,12 +192,20 @@ h3 {
     bottom: 0;
     width: 100%;
     display: flex; /* use flexbox */
+    flex-wrap: wrap;
     justify-content: center; /* center the items */
     font-size: 14px;
 }
 
 .bottom-bar table {
     color: white;
+}
+
+/* media query for smaller screens */
+@media (max-width: 768px) {
+    .bottom-bar-table {
+        flex: 0 0 100%;
+    }
 }
 
 .bottom-bar span {
