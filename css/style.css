@@ -4,6 +4,11 @@ body {
     line-height: 1.42857143;
 }
 
+@font-face {
+    font-family: STFangsong;
+    src: url("./STFangsong.ttf");
+}
+
 p {
     font-size: 18px;
     line-height: 26px;
