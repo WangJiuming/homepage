@@ -190,6 +190,55 @@ h3 {
     max-height: 1000px; /* increase this value for a longer content */
 }
 
+/* style the publication list */
+.paper {
+    margin-bottom: 20px;
+}
+
+.paper .title {
+    /* customize the title line of the article, e.g., bold, etc. */
+    /*font-weight: bold;*/
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 10px 2px;
+}
+
+.paper .authors {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 2px 10px;
+}
+
+.paper .journal {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.paper .link {
+    display: inline-block;
+    font-size: 18px;
+    /*color: black;*/
+    color: #428bca;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 0 25px;
+    line-height: 25px;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+}
+
+.paper .link:hover {
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    background: #428bca;
+    border: 1px solid #428bca;
+}
 
 /* bottom bar */
 .bottom-bar {
