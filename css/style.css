@@ -29,6 +29,12 @@ ul {
     padding: 0;
 }
 
+ul li::before {
+    content: "-";
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
 li {
     font-size: 18px;
     line-height: 25px;
