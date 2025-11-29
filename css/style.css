@@ -15,6 +15,7 @@ p {
 
 a {
     color: #428bca;
+    /*color: #069 !important;*/
     text-decoration: none
 }
 
@@ -193,20 +194,33 @@ h3 {
 /* style the publication list */
 .paper {
     margin-bottom: 20px;
+    border-left: 3px solid #bbb;
 }
 
 .paper .title {
     /* customize the title line of the article, e.g., bold, etc. */
     /*font-weight: bold;*/
-    font-size: 18px;
+    display:  block;
+    font-size: 20px;
     line-height: 25px;
-    margin: 10px 10px 2px;
+    margin: 10px 10px 4px;
+    color: #222;
+    /*font-family: "Harding-bold";*/
+    /*font-family: "Frame";*/
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+.paper .title:hover {
+    text-decoration-thickness: 4px;
 }
 
 .paper .authors {
     font-size: 18px;
     line-height: 25px;
     margin: 2px 10px;
+    color: #666;
 }
 
 .paper .journal {
@@ -222,13 +236,15 @@ h3 {
     display: inline-block;
     font-size: 18px;
     /*color: black;*/
-    color: #428bca;
+    /*color: #428bca;*/
+    color: #069;
     height: 25px;
     margin-left: 10px;
     margin-bottom: 5px;
     padding: 0 25px;
     line-height: 25px;
-    border: 1px solid #428bca;
+    /*border: 1px solid #428bca;*/
+    border: 1px solid #069;
     border-radius: 5px;
 }
 
@@ -236,8 +252,58 @@ h3 {
     font-style: normal;
     text-decoration: none;
     color: white;
-    background: #428bca;
-    border: 1px solid #428bca;
+    /*background: #428bca;*/
+    background: #069;
+    /*border: 1px solid #428bca;*/
+    border: 1px solid #069;
+}
+
+.paper .meta {
+    display: inline-block;
+    font-size: 18px;
+    /*color: black;*/
+    /*color: #428bca;*/
+    color: #069 !important;
+    text-decoration-color: #069 !important;
+    height: 25px;
+    /*margin-left: 10px;*/
+    margin-bottom: 5px;
+    padding: 0 25px 0 10px;
+    line-height: 25px;
+    /*margin: 0;*/
+    /*border: 1px solid #428bca;*/
+    /*border: 1px solid #069;*/
+    /*border-radius: 5px;*/
+}
+
+.paper .meta a {
+    position: relative;
+    padding: 0 10px;
+    text-decoration: underline;
+    color: #069 !important;
+    text-decoration-color: #069 !important;
+}
+
+.paper .meta a:hover {
+    /*background: #069 !important;*/
+    text-decoration-color: #cc4b14 !important;
+    color: #cc4b14 !important;
+}
+
+.paper .meta a:first-child {
+    padding-left: 0;
+}
+
+.paper .meta a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1.5px;               /* line thickness */
+    background-color: #ccc;   /* line color */
+    height: 110%;              /* adjust to look balanced */
+    margin: auto;             /* centers the line vertically */
 }
 
 /* bottom bar */

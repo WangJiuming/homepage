@@ -13,7 +13,24 @@
             font-display: swap;
             src: local("STFangsong"), url("./css/STFangsong.woff");
         }
+        @font-face {
+            font-family: "Harding-bold";
+            src: url("HardingText-Bold-Web-c37111391c.woff2") format("woff2");
+            font-weight: 700; /* Adjust if your file is e.g. bold (700) */
+            font-style: normal;
+            font-display: swap; /* Improves loading behavior */
+        }
+        @font-face {
+            font-family: "Frame";
+            src: url("FrameText-Roman-Web.woff") format("woff2");
+            font-weight: 700; /* Adjust if your file is e.g. bold (700) */
+            font-style: normal;
+            font-display: swap; /* Improves loading behavior */
+        }
     </style>
+
+
+
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -108,8 +125,6 @@
             <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank">Hong Kong PhD Fellowship Scheme (HKPFS)</a>.
             Before that, I obtained my Bachelor of Engineering degree (First Class) also at CUHK,
             with a major in Artificial Intelligence.
-<!--            <br>-->
-<!--            <br>-->
             My current research focuses on developing deep-learning-based models for studying and engineering RNA sequences, structures, and functions.
         </p>
 
@@ -119,142 +134,156 @@
         <span style="font-size: 16px">* equal contribution, &dagger; correspondence</span><br>
 
         <div class="paper">
-            <p class="title">
-                Deep learning for RNA structure prediction
-            </p>
+            <a class="title" href="https://authors.elsevier.com/c/1mARZ_hwRXVGjd" target="_blank">
+                Exploring functional insights into the human gut microbiome via the structural proteome
+            </a>
+            <div style="height: 2px;"></div>
             <p class="authors">
-                <b>J. Wang*</b>, Y. Fan*, L. Hong, Z. Hu, Y. Li<sup>&dagger;</sup>
+                H. Liu*, J. Shen*, Z. Zhang*, <span style="color: black"><b>J. Wang*</b></span>, C. Zhang*, L. Zheng, H. Ni, L. Hong, J. Zhang, D. Xue, J. Chen, Q. Yu, Z. Qu, Y. Ma, T. Si, L. Zheng, S. Wang, C. Jiang, Y. Li<sup>&dagger;</sup>, K. Wang<sup>&dagger;</sup> & L. Dai<sup>&dagger;</sup>
+            </p>
+            <p class="journal">
+                <i>Cell Host & Microbe</i>, 2025
+            </p>
+            <p class="meta">
+                <a href="https://authors.elsevier.com/c/1mARZ_hwRXVGjd" target="_blank">Article</a>
+                <a href="https://github.com/WangJiuming/deer" target="_blank">Code</a>
+            </p>
+        </div>
+
+        <div class="paper">
+            <a class="title" href="https://www.sciencedirect.com/science/article/pii/S0959440X25000090" target="_blank">
+                Deep learning for RNA structure prediction
+            </a>
+            <p class="authors">
+                <span style="color: black"><b>J. Wang*</b></span>, Y. Fan*, L. Hong, Z. Hu & Y. Li<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Current Opinion in Structural Biology</i>, 2025
             </p>
-            <a class="link" href="https://www.sciencedirect.com/science/article/pii/S0959440X25000090" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://github.com/WangJiuming/AI4RNA-Structure-Modeling-Survey" target="_blank">
-                code
-            </a>
+            <p class="meta">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0959440X25000090" target="_blank">Article</a>
+                <a href="https://github.com/WangJiuming/AI4RNA-Structure-Modeling-Survey" target="_blank">Code</a>
+            </p>
         </div>
 
         <div class="paper">
-            <p class="title">
+            <a class="title" href="https://www.nature.com/articles/s41592-024-02487-0" target="_blank">
                 Accurate RNA 3D structure prediction using a language model-based deep learning approach
-            </p>
+            </a>
             <p class="authors">
-                T. Shen*, Z. Hu*, S. Sun*<sup>&dagger;</sup>, D. Liu*<sup>&dagger;</sup>, F. Wong, <b>J. Wang</b>, J. Chen, Y. Wang, L. Hong, J. Xiao, L. Zheng, T. Krishnamoorthi, I. King, S. Wang<sup>&dagger;</sup>, P. Yin<sup>&dagger;</sup>, J. J. Collins<sup>&dagger;</sup> & Y. Li*<sup>&dagger;</sup>
+                T. Shen*, Z. Hu*, S. Sun*<sup>&dagger;</sup>, D. Liu*<sup>&dagger;</sup>, F. Wong, <span style="color: black"><b>J. Wang</b></span>, J. Chen, Y. Wang, L. Hong, J. Xiao, L. Zheng, T. Krishnamoorthi, I. King, S. Wang<sup>&dagger;</sup>, P. Yin<sup>&dagger;</sup>, J. J. Collins<sup>&dagger;</sup> & Y. Li*<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Nature Methods</i>, 2024
             </p>
-            <a class="link" href="https://www.nature.com/articles/s41592-024-02487-0" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://www.nature.com/articles/s41592-024-02488-z" target="_blank">
-                briefing
-            </a>
-            <a class="link" href="https://github.com/ml4bio/RhoFold" target="_blank">
-                code
-            </a>
-            <a class="link" href="https://proj.cse.cuhk.edu.hk/aihlab/RhoFold/#/" target="_blank">
-                server
-            </a>
+            <p class="meta">
+                <a href="https://www.nature.com/articles/s41592-024-02487-0" target="_blank">Article</a>
+                <a href="https://proj.cse.cuhk.edu.hk/aihlab/RhoFold/#/" target="_blank">Code</a>
+                <a href="https://github.com/ml4bio/RhoFold" target="_blank">Server</a>
+                <a href="https://www.nature.com/articles/s41592-024-02488-z" target="_blank">Research Briefing @ Nature Methods</a>
+
+            </p>
+<!--            <a class="link" href="https://www.nature.com/articles/s41592-024-02487-0" target="_blank">-->
+<!--                article-->
+<!--            </a>-->
+<!--            <a class="link" href="https://www.nature.com/articles/s41592-024-02488-z" target="_blank">-->
+<!--                research briefing @ Nature Methods-->
+<!--            </a>-->
+<!--            <a class="link" href="https://github.com/ml4bio/RhoFold" target="_blank">-->
+<!--                code-->
+<!--            </a>-->
+<!--            <a class="link" href="https://proj.cse.cuhk.edu.hk/aihlab/RhoFold/#/" target="_blank">-->
+<!--                server-->
+<!--            </a>-->
         </div>
 
         <div class="paper">
-            <p class="title">
+            <a class="title" href="https://www.nature.com/articles/s43588-024-00720-6" target="_blank">
                 Deep generative design of RNA aptamers using structural predictions
-            </p>
+            </a>
+<!--            add some space here -->
+            <div style="height: 3px;"></div>
             <p class="authors">
-                F. Wong*, D. He*, A. Krishnan, L. Hong, A. Z. Wang, <b>J. Wang</b>, Z. Hu, S. Omori, A. Li, J. Rao, Q. Yu, W. Jin, T. Zhang, K. Ilia, J. X. Chen, S. Zheng, I. King, Y. Li<sup>&dagger;</sup> & J. J. Collins<sup>&dagger;</sup>
+                F. Wong*, D. He*, A. Krishnan, L. Hong, A. Z. Wang, <span style="color: black"><b>J. Wang</b></span>, Z. Hu, S. Omori, A. Li, J. Rao, Q. Yu, W. Jin, T. Zhang, K. Ilia, J. X. Chen, S. Zheng, I. King, Y. Li<sup>&dagger;</sup> & J. J. Collins<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Nature Computational Science</i>, 2024
             </p>
-            <a class="link" href="https://www.nature.com/articles/s43588-024-00720-6" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://github.com/ml4bio/RhoDesign" target="_blank">
-                code
-            </a>
+            <p class="meta">
+                <a href="https://www.nature.com/articles/s43588-024-00720-6" target="_blank">Article</a>
+                <a href="https://github.com/ml4bio/RhoDesign" target="_blank">Code</a>
+            </p>
+
         </div>
 
         <div class="paper">
-            <p class="title">
+            <a class="title" href="https://genome.cshlp.org/content/34/8/1174" target="_blank">
                 A fast and adaptive detection framework for genome-wide chromatin loop mapping from Hi-C data
-            </p>
+            </a>
             <p class="authors">
-                S. Chen*, <b>J. Wang*</b>, I. Jung, Z. Qiu, X. Gao, Y. Li<sup>&dagger;</sup>
+                S. Chen*, <span style="color: black"><b>J. Wang*</b></span>, I. Jung, Z. Qiu, X. Gao & Y. Li<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Genome Research</i>, 2024
             </p>
-            <a class="link" href="https://genome.cshlp.org/content/34/8/1174" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://github.com/WangJiuming/YOLOOP" target="_blank">
-                code
-            </a>
+            <p class="meta">
+                <a href="https://genome.cshlp.org/content/34/8/1174" target="_blank">Article</a>
+                <a href="https://github.com/WangJiuming/YOLOOP" target="_blank">Code</a>
+            </p>
+
         </div>
 
         <div class="paper">
-            <p class="title">
+            <a class="title" href="https://www.nature.com/articles/s41587-024-02353-6" target="_blank">
                 Fast, sensitive detection of protein homologs using deep dense retrieval
-            </p>
+            </a>
             <p class="authors">
-                L. Hong*, Z. Hu*, S. Sun*<sup>&dagger;</sup>, T. Xiang*, <b>J. Wang</b>, Q. Tan, L. Zheng, S. Wang, S. Xu, I. King, M. Gerstein<sup>&dagger;</sup>, Y. Li*<sup>&dagger;</sup>
+                L. Hong*, Z. Hu*, S. Sun*<sup>&dagger;</sup>, T. Xiang*, <span style="color: black"><b>J. Wang</b></span>, Q. Tan, L. Zheng, S. Wang, S. Xu, I. King, M. Gerstein<sup>&dagger;</sup> & Y. Li*<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Nature Biotechnology</i>, 2024
             </p>
-            <a class="link" href="https://www.nature.com/articles/s41587-024-02353-6" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://www.nature.com/articles/s41587-024-02359-0" target="_blank">
-                briefing
-            </a>
-            <a class="link" href="https://www.nature.com/articles/s41592-024-02470-9" target="_blank">
-                highlight
-            </a>
-            <a class="link" href="https://github.com/ml4bio/Dense-Homolog-Retrieval" target="_blank">
-                code
-            </a>
+            <p class="meta">
+                <a href="https://www.nature.com/articles/s41587-024-02353-6" target="_blank">Article</a>
+                <a href="https://github.com/ml4bio/Dense-Homolog-Retrieval" target="_blank">Code</a>
+                <a href="https://www.nature.com/articles/s41587-024-02359-0" target="_blank">Research Briefing @ Nature Biotechnology</a>
+                <a href="https://www.nature.com/articles/s41592-024-02470-9" target="_blank">Research Highlight @ Nature Methods</a>
+            </p>
+
+
         </div>
         <div class="paper">
-            <p class="title">
+            <a class="title" href="https://doi.org/10.1093/bioinformatics/btad259" target="_blank">
                 AcrNET: predicting anti-CRISPR with deep learning
-            </p>
+            </a>
             <p class="authors">
-                Y. Li*, Y. Wei*, S. Xu, Q. Tan, L. Zong, <b>J. Wang</b>, Y. Wang, J. Chen, L. Hong, Y. Li<sup>&dagger;</sup>
+                Y. Li*, Y. Wei*, S. Xu, Q. Tan, L. Zong, <span style="color: black"><b>J. Wang</b></span>, Y. Wang, J. Chen, L. Hong & Y. Li<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Bioinformatics</i>, 2023
             </p>
-            <a class="link" href="https://doi.org/10.1093/bioinformatics/btad259" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://github.com/banma12956/AcrNET" target="_blank">
-                code
-            </a>
-            <a class="link" href="https://proj.cse.cuhk.edu.hk/aihlab/AcrNET/#/home" target="_blank">
-                server
-            </a>
+            <p class="meta">
+                <a href="https://doi.org/10.1093/bioinformatics/btad259" target="_blank">Article</a>
+                <a href="https://github.com/banma12956/AcrNET" target="_blank">Code</a>
+                <a href="https://proj.cse.cuhk.edu.hk/aihlab/AcrNET/#/home" target="_blank">Server</a>
+            </p>
+
         </div>
         <div class="paper">
-            <p class="title">
+            <a class="title" href="https://www.nature.com/articles/s41467-022-34550-9" target="_blank">
                 Deep autoencoder for interpretable tissue-adaptive deconvolution and cell-type-specific gene analysis
-            </p>
+            </a>
             <p class="authors">
-                Y. Chen*, Y. Wang*, Y. Chen, Y. Cheng, Y. Wei, Y. Li, <b>J. Wang</b>, Y. Wei, T. Chan<sup>&dagger;</sup>, Y. Li<sup>&dagger;</sup>
+                Y. Chen*, Y. Wang*, Y. Chen, Y. Cheng, Y. Wei, Y. Li, <span style="color: black"><b>J. Wang</b></span>, Y. Wei, T. Chan<sup>&dagger;</sup> & Y. Li<sup>&dagger;</sup>
             </p>
             <p class="journal">
                 <i>Nature Communications</i>, 2022
             </p>
-            <a class="link" href="https://www.nature.com/articles/s41467-022-34550-9" target="_blank">
-                article
-            </a>
-            <a class="link" href="https://github.com/poseidonchan/TAPE" target="_blank">
-                code
-            </a>
+            <p class="meta">
+                <a href="https://www.nature.com/articles/s41467-022-34550-9" target="_blank">Article</a>
+                <a href="https://github.com/poseidonchan/TAPE" target="_blank">Code</a>
+            </p>
+
         </div>
 
         <hr>
