@@ -158,6 +158,19 @@ h3 {
     .info-left img {
         max-width: 300px;
     }
+
+    .paper-layout {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .paper-cover {
+        margin: 0 10px 10px;
+    }
+
+    .paper-cover img {
+        width: 140px;
+    }
 }
 
 /* for the pronunciation part */
@@ -195,6 +208,31 @@ h3 {
 .paper {
     margin-bottom: 20px;
     border-left: 3px solid #bbb;
+}
+
+.paper-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.paper-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.paper-cover {
+    flex: 0 0 auto;
+    margin: 10px 10px 8px 0;
+}
+
+.paper-cover img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #d7d7d7;
 }
 
 .paper .title {
