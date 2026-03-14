@@ -158,7 +158,9 @@ h3 {
     .info-left img {
         max-width: 300px;
     }
+}
 
+@media (max-width: 600px) {
     .paper-layout {
         flex-direction: column;
         gap: 8px;
